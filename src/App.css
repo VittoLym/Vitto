@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 .presentation{
-  height: 20vh;
+  height: 30dvh;
 }
 p, a, li, button, ul {
   margin: 0;
@@ -74,7 +74,6 @@ input:focus, textarea:focus, select:focus {
 		padding: 0 150px;
 	}
 }
-
 p.success {
 	color: green;
 }
@@ -627,4 +626,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 500;
   margin: 0;
   font-size: 1.25rem;
+}
+
+@media (max-width:720px) {
+  .banner {
+    padding:100px 0 100px 0 ;
+    height: 130dvh;
+  }
 }
