@@ -305,6 +305,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  min-height:80dvh ;
 }
 .skill-bx {
   background: #151515;
@@ -312,7 +313,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
-  height: 45vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
