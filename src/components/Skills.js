@@ -38,7 +38,7 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills">
+    <section className="skill mt-4" id="skills">
         <div className="container">
             <div className="row">
                 <div className="col-12">
@@ -47,7 +47,7 @@ export const Skills = () => {
                           <h2>Skills</h2>
                           <p>Technologies and tools that I’ve used to turn ideas into real applications. <br></br>along with the number of projects I’ve completed with each.</p>
                         </article>
-                          <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                          <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={skill1} alt="JavaScript" />
                                 <p className="skills_title">JavaScript</p>
