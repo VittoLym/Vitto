@@ -642,4 +642,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding:100px 0 100px 0 ;
     height: 140dvh;
   }
+  .project .nav.nav-pills{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+  }
+  .project .nav.nav-pills .nav-item {
+    width: max-content;
+  }
+  .project .nav.nav-pills .nav-item a{
+    padding: 15px;
+  }
 }
