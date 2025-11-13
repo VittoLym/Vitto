@@ -668,8 +668,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   box-shadow: 0 10px 15px -3px rgb(20 83 45 / 0.9);
   transition: background-color 0.3s ease; 
   box-sizing: content-box;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
 }
 .wsp_button:hover{
   background-color: #22c55e;
@@ -681,7 +681,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .wsp_button {
     bottom: 3rem;  /* sm:bottom-12 */
     right: 2.5rem; /* sm:right-10 */
-    height: 4rem;
-    width: 4rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
