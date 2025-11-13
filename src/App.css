@@ -657,3 +657,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact p{
   text-align: center;
 }
+.wsp_button{
+  position: fixed;
+  z-index: 30;
+  bottom: 2.5rem;
+  right: 2rem;
+  background-color: #4ade80;
+  border-radius: 9999px;
+  outline: none; 
+  box-shadow: 0 10px 15px -3px rgb(20 83 45 / 0.9);
+  transition: background-color 0.3s ease; 
+  box-sizing: content-box;
+  height: min-content;
+  width: 5dvw;
+}
+.wsp_button:hover{
+  background-color: #22c55e;
+}
+.wsp_button svg{
+  padding: 1rem;
+}
+@media (min-width: 640px) {
+  .wsp_button {
+    bottom: 3rem;  /* sm:bottom-12 */
+    right: 2.5rem; /* sm:right-10 */
+  }
+}
