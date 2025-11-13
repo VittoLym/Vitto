@@ -58,7 +58,7 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1 className="presentation">{`Hi! I'm Vitto`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer","App Developer","Software Developer" ]'><span className="wrap">{text}</span></span></h1>
                 <p>Specialized in developing software solutions using modern technologies, always aiming to build efficient, high-quality, and impactful applications.</p>
-                <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <button onClick={() =>  window.open("https://wa.me/5492616114777?text=Hola%20Vitto,%20te%20contacto%20desde%20tu%20portfolio!","_blank")}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>

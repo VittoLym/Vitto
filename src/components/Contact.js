@@ -26,6 +26,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
+    setFormDetails(formInitialDetails)
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -74,15 +75,19 @@ export const Contact = () => {
                       <input type="tel" value={formDetails.phone} placeholder="Phone No." onChange={(e) => onFormUpdate('phone', e.target.value)}/>
                     </Col>
                     <Col size={12} className="px-1 send">
-                      <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                      <textarea
+                        rows="6"
+                        value={formDetails.message}
+                        placeholder="Message"
+                        onChange={(e) => onFormUpdate('message', e.target.value)}
+                      ></textarea>
+                      {status.message && (
+                        <p className={status.success === false ? "danger" : "success"}>
+                          {status.message}
+                        </p>
+                      )}
                       <button type="submit"><span>{buttonText}</span></button>
                     </Col>
-                    {
-                      status.message &&
-                      <Col>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                      </Col>
-                    }
                   </Row>
                 </form>
               </div>}
