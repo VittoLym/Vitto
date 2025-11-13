@@ -9,23 +9,7 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    }
-  ];
+  const projects = [];
 
   return (
     <section className="project" id="projects">
@@ -52,23 +36,51 @@ export const Projects = () => {
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                              />
-                            )
-                          })
-                        }
+                        {projects.length > 0 ? (
+                          projects.map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                            />
+                          ))
+                        ) : (
+                          <Col>
+                            <p className="text-center text-gray-500 italic mt-4">Not yet 🔧</p>
+                          </Col>
+                        )}
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                      <Row>
+                        {projects.length > 0 ? (
+                          projects.map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                            />
+                          ))
+                        ) : (
+                          <Col>
+                            <p className="text-center text-gray-500 italic mt-4">Not yet 🔧</p>
+                          </Col>
+                        )}
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <Row>
+                        {projects.length > 0 ? (
+                          projects.map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                            />
+                          ))
+                        ) : (
+                          <Col>
+                            <p className="text-center text-gray-500 italic mt-4">Not yet 🔧</p>
+                          </Col>
+                        )}
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
