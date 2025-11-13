@@ -677,9 +677,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .wsp_button svg{
   padding: 1rem;
 }
-@media (min-width: 640px) {
+@media (min-width: 720px) {
   .wsp_button {
     bottom: 3rem;  /* sm:bottom-12 */
     right: 2.5rem; /* sm:right-10 */
+    height: 4rem;
+    width: 4rem;
   }
 }
