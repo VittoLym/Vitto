@@ -27,7 +27,7 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText("Sending...");
     setFormDetails(formInitialDetails)
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("https://vittblog-backend-1.onrender.com/devitto/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
