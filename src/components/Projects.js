@@ -1,15 +1,18 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import vittBlogImage from "../assets/img/vittblog.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
-
-  const projects = [];
+  const projects = []
+  const projectsPersonal = [{
+    title:"Vitt.Blog",
+    description:"Blog personal, en el que habitualmente se tocan temas como la tecnología y proyectos personales, entre otras cosas.",
+    imgUrl: vittBlogImage,
+    url:'https://vittblog.netlify.app'
+  }];
 
   return (
     <section className="project" id="projects">
@@ -34,7 +37,7 @@ export const Projects = () => {
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
+                    <Tab.Pane eventKey="first" className="justify-content-center align-items-center">
                       <Row>
                         {projects.length > 0 ? (
                           projects.map((project, index) => (
@@ -67,9 +70,9 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <Row>
-                        {projects.length > 0 ? (
-                          projects.map((project, index) => (
+                      <Row className="container-pro">
+                        {projectsPersonal.length > 0 ? (
+                          projectsPersonal.map((project, index) => (
                             <ProjectCard
                               key={index}
                               {...project}
