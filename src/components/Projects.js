@@ -1,18 +1,27 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import vittBlogImage from "../assets/img/vittblog.png"
+import expenseTrackerImage from "../assets/img/CLI_expense_tracker.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
   const projects = []
-  const projectsPersonal = [{
-    title:"Vitt.Blog",
-    description:"Blog personal, en el que habitualmente se tocan temas como la tecnología y proyectos personales, entre otras cosas.",
-    imgUrl: vittBlogImage,
-    url:'https://vittblog.netlify.app'
-  }];
+  const projectsPersonal = [
+    {
+      title:"Vitt.Blog",
+      description:"Blog personal, en el que habitualmente se tocan temas como la tecnología y proyectos personales, entre otras cosas.",
+      imgUrl: vittBlogImage,
+      url:'https://vittblog.netlify.app'
+    },
+    {
+      title:"Expense Tracker",
+      description:"Node.js CLI tool focused on expense management, budget tracking, and data persistence, showcasing clean architecture and backend fundamentals.",
+      imgUrl: expenseTrackerImage,
+      url: null
+    }
+];
 
   return (
     <section className="project" id="projects">
