@@ -2,6 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import vittBlogImage from "../assets/img/vittblog.png"
 import expenseTrackerImage from "../assets/img/CLI_expense_tracker.png"
+import wspDaily from "../assets/img/whatsapp_daily.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -19,6 +20,12 @@ export const Projects = () => {
       title:"Expense Tracker",
       description:"Node.js CLI tool focused on expense management, budget tracking, and data persistence, showcasing clean architecture and backend fundamentals.",
       imgUrl: expenseTrackerImage,
+      url: null
+    },
+    {
+      title:"Daily WSP",
+      description:"WhatsApp bot built with Node.js that sends automated daily reminders to groups, with real user mentions and persistent session handling.",
+      imgUrl: wspDaily,
       url: null
     }
 ];
