@@ -23,7 +23,7 @@ export const Projects = () => {
       title:"Expense Tracker",
       description:"Node.js CLI tool focused on expense management, budget tracking, and data persistence, showcasing clean architecture and backend fundamentals.",
       imgUrl: expenseTrackerImage,
-      url: null,
+      url: "https://github.com/VittoLym/CLI_Expense_Tracker_node",
       type:"BACKEND",
       tec:[]
     },
@@ -31,7 +31,7 @@ export const Projects = () => {
       title:"Daily WSP",
       description:"WhatsApp bot built with Node.js that sends automated daily reminders to groups, with real user mentions and persistent session handling.",
       imgUrl: wspDaily,
-      url: null,
+      url: "https://github.com/VittoLym/daily_wsp",
       type:"BACKEND",
       tec:[]
     },
@@ -39,7 +39,7 @@ export const Projects = () => {
       title:"Short URL",
       description:"A simple RESTful URL shortener API built with Node.js and Express, featuring redirects, CRUD operations, and access statistics for each short link.",
       imgUrl:shortUrl,
-      url:null,
+      url:"https://github.com/VittoLym/short-url",
       type:"BACKEND",
       tec:[]
     }
