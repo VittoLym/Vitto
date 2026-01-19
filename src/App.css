@@ -420,14 +420,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 }
 .tab-content{
-  min-height: 300px;
+  min-height: 650px;
 }
 .tab-pane{
   height: 100%;
 }
 .container-pro{
-  justify-content: center;
+  justify-content: start;
   height: 70%;
+  flex-wrap: wrap;
+}
+.container-pro .col-md-4{
+  margin-top: 1rem;
 }
 .proj-imgbx {
   position: relative;
@@ -435,7 +439,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   cursor: pointer;
   height: 100%;
-  width: 100%
+  width: 100%;
+  margin: 0;
   
 }
 .proj-imgbx::before {
@@ -481,6 +486,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+}
+.proj-txtx p strong{
+  color:#D4AF37
 }
 .background-image-right {
   top: 20%;

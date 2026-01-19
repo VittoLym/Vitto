@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import vittBlogImage from "../assets/img/vittblog.png"
 import expenseTrackerImage from "../assets/img/CLI_expense_tracker.png"
 import wspDaily from "../assets/img/whatsapp_daily.png"
+import shortUrl from "../assets/img/short_url.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -12,21 +13,35 @@ export const Projects = () => {
   const projectsPersonal = [
     {
       title:"Vitt.Blog",
-      description:"Blog personal, en el que habitualmente se tocan temas como la tecnología y proyectos personales, entre otras cosas.",
+      description:"Personal blog where I regularly share content about technology, personal projects, and other related topics.",
       imgUrl: vittBlogImage,
-      url:'https://vittblog.netlify.app'
+      url:'https://vittblog.netlify.app',
+      type:"FRONTEND",
+      tec:[]
     },
     {
       title:"Expense Tracker",
       description:"Node.js CLI tool focused on expense management, budget tracking, and data persistence, showcasing clean architecture and backend fundamentals.",
       imgUrl: expenseTrackerImage,
-      url: null
+      url: null,
+      type:"BACKEND",
+      tec:[]
     },
     {
       title:"Daily WSP",
       description:"WhatsApp bot built with Node.js that sends automated daily reminders to groups, with real user mentions and persistent session handling.",
       imgUrl: wspDaily,
-      url: null
+      url: null,
+      type:"BACKEND",
+      tec:[]
+    },
+    {
+      title:"Short URL",
+      description:"A simple RESTful URL shortener API built with Node.js and Express, featuring redirects, CRUD operations, and access statistics for each short link.",
+      imgUrl:shortUrl,
+      url:null,
+      type:"BACKEND",
+      tec:[]
     }
 ];
 
