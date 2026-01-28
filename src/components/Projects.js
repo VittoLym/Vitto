@@ -5,6 +5,7 @@ import expenseTrackerImage from "../assets/img/CLI_expense_tracker.png"
 import wspDaily from "../assets/img/whatsapp_daily.png"
 import shortUrl from "../assets/img/short_url.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import trainifyAPI from "../assets/img/trainify_api2.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -40,6 +41,14 @@ export const Projects = () => {
       description:"A simple RESTful URL shortener API built with Node.js and Express, featuring redirects, CRUD operations, and access statistics for each short link.",
       imgUrl:shortUrl,
       url:"https://github.com/VittoLym/short-url",
+      type:"BACKEND",
+      tec:[]
+    },
+    {
+      title:"Trainify API",
+      description:"A fitness tracking backend with JWT authentication, workout management, exercise database, progress reports, and PostgreSQL integration.",
+      imgUrl:trainifyAPI,
+      url:"https://github.com/VittoLym/Trainify_api",
       type:"BACKEND",
       tec:[]
     }
