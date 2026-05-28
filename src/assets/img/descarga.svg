@@ -1,0 +1,93 @@
+<svg width="1400" height="360" viewBox="0 0 1400 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glow elegante -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.22 0"></feColorMatrix>
+      <feMerge>
+        <feMergeNode></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- Gradiente blanco premium -->
+    <linearGradient id="textGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"></stop>
+      <stop offset="100%" stop-color="#d9d9d9"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Logo -->
+  <g filter="url(#softGlow)" fill="url(#textGradient)">
+
+    <!-- V (estilo cyber/agresiva) -->
+    <path d="
+      M120 80
+      L185 260
+      H220
+      L285 80
+      H248
+      L202 214
+      L157 80
+      Z
+    "></path>
+
+    <!-- I -->
+    <rect x="335" y="80" width="28" height="180" rx="2"></rect>
+
+    <!-- T -->
+    <path d="
+      M405 80
+      H580
+      L565 108
+      H500
+      V260
+      H468
+      V108
+      H405
+      Z
+    "></path>
+
+    <!-- T -->
+    <path d="
+      M600 80
+      H775
+      L760 108
+      H695
+      V260
+      H663
+      V108
+      H600
+      Z
+    "></path>
+
+    <!-- O (futurista, angular) -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="
+      M855 80
+      H980
+      C1035 80 1075 118 1075 170
+      C1075 222 1035 260 980 260
+      H855
+      C800 260 760 222 760 170
+      C760 118 800 80 855 80
+      Z
+
+      M865 112
+      C830 112 795 135 795 170
+      C795 205 830 228 865 228
+      H970
+      C1005 228 1040 205 1040 170
+      C1040 135 1005 112 970 112
+      H865
+      Z
+    "></path>
+
+    <!-- detalle dev oculto </> -->
+    <path d="M1120 145L1090 170L1120 195" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M1180 145L1210 170L1180 195" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M1165 135L1145 205" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+  </g>
+</svg>

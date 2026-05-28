@@ -1,0 +1,28 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#glow)" fill="white">
+    <!-- V -->
+    <path d="M120 70L185 250H225L290 70H250L205 205L160 70H120Z"></path>
+
+    <!-- I -->
+    <rect x="330" y="70" width="32" height="180" rx="2"></rect>
+
+    <!-- T -->
+    <path d="M395 70H560V98H494V250H462V98H395V70Z"></path>
+
+    <!-- T -->
+    <path d="M585 70H750V98H684V250H652V98H585V70Z"></path>
+
+    <!-- O -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M840 70C790 70 755 104 755 160C755 216 790 250 840 250H940C990 250 1025 216 1025 160C1025 104 990 70 940 70H840ZM845 102H935C965 102 990 122 990 160C990 198 965 218 935 218H845C815 218 790 198 790 160C790 122 815 102 845 102Z"></path>
+  </g>
+</svg>
