@@ -1,91 +1,160 @@
-<svg width="1400" height="320" viewBox="0 0 1400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="100%" viewBox="0 0 1550 320" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Glow sutil -->
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+    <!-- ULTRA TECH GLOW EFFECT (Multicapa para máxima profundidad) -->
+    <filter id="epicGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <!-- Brillo base amplio (Violeta) -->
+      <feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="#7C3AED" flood-opacity="0.55"/>
+      <!-- Brillo de núcleo denso (Fucsia/Neon) -->
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#D946EF" flood-opacity="0.4"/>
+      <!-- Contorno de nitidez -->
+      <feGaussianBlur stdDeviation="1" result="blur"/>
       <feMerge>
-        <feMergeNode in="blur"></feMergeNode>
-        <feMergeNode in="SourceGraphic"></feMergeNode>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <!-- Gradiente premium -->
-    <linearGradient id="textGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FFFFFF"></stop>
-      <stop offset="100%" stop-color="#D7D7D7"></stop>
+    <!-- GRADIENTE 1: DE (Cyberpunk Violet/Neon Magenta) -->
+    <linearGradient id="cyberViolet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6D28D9"/>
+      <stop offset="40%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#D946EF"/>
+    </linearGradient>
+
+    <!-- GRADIENTE 2: V (Fusión Perfecta de Espectro Tech) -->
+    <linearGradient id="techFusion" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D946EF"/>
+      <stop offset="30%" stop-color="#C084FC"/>
+      <stop offset="75%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+
+    <!-- GRADIENTE 3: ITTO + </> (Platino / Cromo Premium) -->
+    <linearGradient id="platinumChrome" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
     </linearGradient>
   </defs>
 
-  <g fill="url(#textGradient)" filter="url(#glow)">
-    
-    <!-- V -->
-    <path d="
-      M120 75
-      L190 245
-      H220
-      L290 75
-      H252
-      L205 190
-      L158 75
+  <!-- ================= PARTE 1: "DE" (VIOLETA CYBER) ================= -->
+  <g filter="url(#epicGlow)">
+    <!-- D: Rediseñada con curvas premium y corte limpio -->
+    <path fill="url(#cyberViolet)" fill-rule="evenodd" clip-rule="evenodd" d="
+      M90 70
+      H190
+      C245 70 285 110 285 160
+      C285 210 245 250 190 250
+      H90
+      V70
+      ZM134 106
+      V214
+      H182
+      C215 214 241 192 241 160
+      C241 128 215 106 182 106
+      H134
       Z
-    "></path>
+    "/>
 
-    <!-- I -->
-    <rect x="340" y="75" width="26" height="170" rx="2"></rect>
-
-    <!-- T -->
-    <path d="
-      M405 75
-      H565
-      L550 103
-      H490
-      V245
-      H458
-      V103
-      H405
+    <!-- E: Geometría Tech de bloque puro -->
+    <path fill="url(#cyberViolet)" d="
+      M320 70
+      H430
+      V106
+      H364
+      V142
+      H420
+      V178
+      H364
+      V214
+      H430
+      V250
+      H320
+      V70
       Z
-    "></path>
-
-    <!-- T -->
-    <path d="
-      M590 75
-      H750
-      L735 103
-      H675
-      V245
-      H643
-      V103
-      H590
-      Z
-    "></path>
-
-    <!-- O (normal, linda, legible) -->
-    <path fill-rule="evenodd" clip-rule="evenodd" d="
-      M885 75
-      C825 75 780 115 780 160
-      C780 205 825 245 885 245
-      C945 245 990 205 990 160
-      C990 115 945 75 885 75
-      Z
-
-      M885 105
-      C845 105 812 130 812 160
-      C812 190 845 215 885 215
-      C925 215 958 190 958 160
-      C958 130 925 105 885 105
-      Z
-    "></path>
+    "/>
   </g>
 
-  <!-- </> integrado -->
-  <g stroke="url(#textGradient)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
-    <!-- < -->
-    <path d="M1120 130L1085 160L1120 190"></path>
+  <!-- ================= PARTE 2: "V" (LA FUSIÓN DE COLOR) ================= -->
+  <g filter="url(#epicGlow)">
+    <!-- V: Brazos estilizados, transición de Violeta a Platino -->
+    <path fill="url(#techFusion)" d="
+      M465 70
+      L545 250
+      H585
+      L665 70
+      H621
+      L565 194
+      L509 70
+      H465
+      Z
+    "/>
+  </g>
 
-    <!-- / -->
-    <path d="M1160 120L1138 200"></path>
+  <!-- ================= PARTE 3: "ITTO" (PLATINO LÍQUIDO) ================= -->
+  <g fill="url(#platinumChrome)" filter="url(#epicGlow)">
+    <!-- I -->
+    <rect x="695" y="70" width="40" height="180" rx="3"/>
+
+    <!-- T (Primero) -->
+    <path d="
+      M765 70
+      H905
+      V106
+      H853
+      V250
+      H813
+      V106
+      H765
+      V70
+      Z
+    "/>
+
+    <!-- T (Segundo) -->
+    <path d="
+      M935 70
+      H1075
+      V106
+      H1023
+      V250
+      H983
+      V106
+      H935
+      V70
+      Z
+    "/>
+
+    <!-- O: Círculo perfecto premium con calado exacto -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="
+      M1195 70
+      C1247.45 70 1290 110.3 1290 160
+      C1290 209.7 1247.45 250 1195 250
+      C1142.55 250 1100 209.7 1100 160
+      C1100 110.3 1142.55 70 1195 70
+      ZM1195 106
+      C1164.07 106 1140 129.88 1140 160
+      C1140 190.12 1164.07 214 1195 214
+      C1225.93 214 1250 190.12 1250 160
+      C1250 129.88 1225.93 106 1195 106
+      Z
+    "/>
+  </g>
+
+  <!-- ================= PARTE 4: </> TAG (MINIMALISTA & SHARP) ================= -->
+  <g
+    stroke="url(#platinumChrome)"
+    stroke-width="13"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#epicGlow)"
+  >
+    <!-- < -->
+    <path d="M1365 115L1320 160L1365 205"/>
+
+    <!-- / (Estilizado y más largo en los extremos) -->
+    <path d="M1415 95L1385 225"/>
 
     <!-- > -->
-    <path d="M1185 130L1220 160L1185 190"></path>
+    <path d="M1435 115L1480 160L1435 205"/>
   </g>
 </svg>

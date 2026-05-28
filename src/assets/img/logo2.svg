@@ -1,0 +1,76 @@
+<svg width="100%" height="100%" viewBox="0 0 1650 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="cyberGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#A855F7" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#FFFFFF" flood-opacity="0.3"/>
+    </filter>
+
+    <linearGradient id="neonViolet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <linearGradient id="fusionV" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+
+    <linearGradient id="techWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#cyberGlow)">
+    <path fill="url(#neonViolet)" fill-rule="evenodd" clip-rule="evenodd" d="
+      M60 70 H180 C235 70 275 110 275 160 C275 210 235 250 180 250 H60 V70 Z
+      M104 106 V214 H172 C205 214 231 192 231 160 C231 128 205 106 172 106 H104 Z
+    "/>
+    <rect x="75" y="90" width="12" height="140" fill="#000" opacity="0.3"/>
+    <rect x="120" y="130" width="35" height="6" fill="#FFFFFF"/>
+    <rect x="120" y="145" width="35" height="6" fill="#FFFFFF"/>
+    <rect x="120" y="160" width="35" height="6" fill="#FFFFFF"/>
+    <circle cx="205" cy="160" r="8" fill="#FFFFFF"/>
+
+    <path fill="url(#neonViolet)" d="
+      M300 70 H420 V105 H345 V135 H405 V170 H345 V215 H420 V250 H300 V70 Z
+    "/>
+    <p_ath d="M300 115 H330 V125 H300 Z" fill="#000" opacity="0.4"/>
+    <p_ath d="M300 195 H330 V205 H300 Z" fill="#000" opacity="0.4"/>
+    <circle cx="380" cy="87" r="4" fill="#FFFFFF"/>
+    <circle cx="380" cy="233" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <g filter="url(#cyberGlow)">
+    <path fill="url(#fusionV)" d="
+      M440 70 L520 250 H555 L635 70 H590 L538 190 L485 70 H440 Z
+    "/>
+    <line x1="538" y1="190" x2="538" y2="250" stroke="#000" stroke-width="4" opacity="0.5"/>
+  </g>
+
+  <g fill="url(#techWhite)" filter="url(#cyberGlow)">
+    <rect x="660" y="70" width="45" height="180" rx="4"/>
+    <rect x="670" y="85" width="25" height="15" fill="#000" opacity="0.2"/>
+    <rect x="670" y="220" width="25" height="15" fill="#000" opacity="0.2"/>
+    <circle cx="682.5" cy="160" r="5" fill="#7C3AED"/>
+
+    <path d="M735 70 H875 V105 H825 V250 H785 V105 H735 V70 Z"/>
+    <rect x="745" y="82" width="115" height="5" fill="#000" opacity="0.2"/>
+
+    <path d="M905 70 H1045 V105 H995 V250 H955 V105 H905 V70 Z"/>
+    <rect x="915" y="82" width="115" height="5" fill="#000" opacity="0.2"/>
+
+    <path fill-rule="evenodd" clip-rule="evenodd" d="
+      M1140 70 H1210 L1260 120 V190 L1210 240 H1140 L1090 190 V120 L1140 70 Z
+      M1152 105 H1198 L1225 132 V178 L1198 205 H1152 L1125 178 V132 L1152 105 Z
+    "/>
+    <rect x="1172" y="75" width="4" height="20" fill="#7C3AED"/>
+    <rect x="1172" y="225" width="4" height="20" fill="#7C3AED"/>
+  </g>
+
+  <g stroke="url(#techWhite)" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter" filter="url(#cyberGlow)">
+    <path d="M1330 110 L1285 160 L1330 210"/>
+    <path d="M1380 90 L1350 230" stroke="url(#neonViolet)" stroke-width="16"/>
+    <path d="M1400 110 L1445 160 L1400 210"/>
+  </g>
+</svg>

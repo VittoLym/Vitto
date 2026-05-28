@@ -1,0 +1,91 @@
+<svg width="200" height="100" viewBox="0 0 1400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glow sutil -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- Gradiente premium -->
+    <linearGradient id="textGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"></stop>
+      <stop offset="100%" stop-color="#D7D7D7"></stop>
+    </linearGradient>
+  </defs>
+
+  <g fill="url(#textGradient)" filter="url(#glow)">
+    
+    <!-- V -->
+    <path d="
+      M120 75
+      L190 245
+      H220
+      L290 75
+      H252
+      L205 190
+      L158 75
+      Z
+    "></path>
+
+    <!-- I -->
+    <rect x="340" y="75" width="26" height="170" rx="2"></rect>
+
+    <!-- T -->
+    <path d="
+      M405 75
+      H565
+      L550 103
+      H490
+      V245
+      H458
+      V103
+      H405
+      Z
+    "></path>
+
+    <!-- T -->
+    <path d="
+      M590 75
+      H750
+      L735 103
+      H675
+      V245
+      H643
+      V103
+      H590
+      Z
+    "></path>
+
+    <!-- O (normal, linda, legible) -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="
+      M885 75
+      C825 75 780 115 780 160
+      C780 205 825 245 885 245
+      C945 245 990 205 990 160
+      C990 115 945 75 885 75
+      Z
+
+      M885 105
+      C845 105 812 130 812 160
+      C812 190 845 215 885 215
+      C925 215 958 190 958 160
+      C958 130 925 105 885 105
+      Z
+    "></path>
+  </g>
+
+  <!-- </> integrado -->
+  <g stroke="url(#textGradient)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <!-- < -->
+    <path d="M1120 130L1085 160L1120 190"></path>
+
+    <!-- / -->
+    <path d="M1160 120L1138 200"></path>
+
+    <!-- > -->
+    <path d="M1185 130L1220 160L1185 190"></path>
+  </g>
+</svg>

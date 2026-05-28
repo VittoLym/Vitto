@@ -44,7 +44,6 @@ export const NavBar = () => {
             <img 
               src={logo} 
               alt="Vitto"
-              style={{ width: "auto", height: "45px", display: "block" }}
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
