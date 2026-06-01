@@ -114,9 +114,33 @@ span.navbar-text {
     display: flex;
     align-items: center;
 }
+
 .social-icon {
     display: inline-block;
     margin-left: 14px;
+}
+.show-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.show-more-btn {
+  padding: 12px 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #662299, #8f4fff);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(102, 34, 153, 0.3);
+}
+
+.show-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(102, 34, 153, 0.6);
+  color: white;
 }
 .social-icon a {
     width: 42px;

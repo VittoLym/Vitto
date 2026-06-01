@@ -1,11 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import vittBlogImage from "../assets/img/vittblog.png"
-import expenseTrackerImage from "../assets/img/CLI_expense_tracker.png"
+import ScalableEcommerceApiImage from "../assets/img/ScalableEcommerceApi.png"
 import wspDaily from "../assets/img/whatsapp_daily.png"
 import shortUrl from "../assets/img/short_url.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import trainifyAPI from "../assets/img/trainify_api2.png"
+import CAEngine from "../assets/img/CAEngine2.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -21,10 +22,18 @@ export const Projects = () => {
       tec:[]
     },
     {
-      title:"Expense Tracker",
-      description:"Node.js CLI tool focused on expense management, budget tracking, and data persistence, showcasing clean architecture and backend fundamentals.",
-      imgUrl: expenseTrackerImage,
-      url: "https://github.com/VittoLym/CLI_Expense_Tracker_node",
+      title:"Scalable Ecommerce Api",
+      description:"Production-ready e-commerce backend built for scalability, resilience, and high-performance distributed systems.",
+      imgUrl: ScalableEcommerceApiImage,
+      url: "https://github.com/VittoLym/Scalable_ecommerce_api",
+      type:"BACKEND",
+      tec:[]
+    },
+    {
+      title:"CA Engine",
+      description:"Automated content creation pipeline for developers.",
+      imgUrl:CAEngine,
+      url:"https://github.com/VittoLym/insights_engine",
       type:"BACKEND",
       tec:[]
     },
@@ -51,7 +60,7 @@ export const Projects = () => {
       url:"https://github.com/VittoLym/Trainify_api",
       type:"BACKEND",
       tec:[]
-    }
+    },
 ];
 
   return (
@@ -63,7 +72,8 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Here are some of the projects I’ve built with passion and curiosity. Each one represents a challenge overcome and a step forward in my journey as a developer.</p>
+                <p>A selection of personal, freelance, and professional projects focused on
+  scalable systems, automation, AI integration, and modern web development.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -132,6 +142,16 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
+      <div className="show-more-container">
+        <a
+          href="https://github.com/VittoLym"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="show-more-btn"
+        >
+          View More Projects →
+        </a>
+      </div>
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
   )
