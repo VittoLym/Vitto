@@ -10,6 +10,8 @@ import skill9 from "../assets/img/figma.svg"
 import skill10 from "../assets/img/git.svg"
 import skill11 from "../assets/img/typescript.svg"
 import skill12 from "../assets/img/tailwind.svg"
+import skill13 from "../assets/img/java.png"
+import skill14 from "../assets/img/docker.png"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -77,6 +79,16 @@ export const Skills = () => {
                                 <img src={skill4} alt="Flutter" />
                                 <p className="skills_title">Flutter</p>
                                 <h5>(3)</h5>
+                            </div>
+                            <div className="item">
+                                <img src={skill13} alt="Java" />
+                                <p className="skills_title">Java</p>
+                                <h5>(5)</h5>
+                            </div>
+                            <div className="item">
+                                <img src={skill14} alt="Docker" />
+                                <p className="skills_title">Docker</p>
+                                <h5>(8)</h5>
                             </div>
                             <div className="item">
                                 <img src={skill5} alt="MySQL" />
