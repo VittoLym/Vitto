@@ -457,6 +457,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .container-pro .col-md-4{
   margin-top: 1rem;
+  min-height: 250px;
 }
 .proj-imgbx {
   position: relative;

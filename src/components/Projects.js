@@ -7,6 +7,7 @@ import shortUrl from "../assets/img/short_url.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import trainifyAPI from "../assets/img/trainify_api2.png"
 import CAEngine from "../assets/img/CAEngine2.png"
+import zeroloop from "../assets/img/zeroloop.jpeg"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -62,6 +63,16 @@ export const Projects = () => {
       tec:[]
     },
 ];
+  const projectsFreelance = [
+    {
+      title:"Zeroloop",
+      description:"A simple RESTful URL shortener API built with Node.js and Express, featuring redirects, CRUD operations, and access statistics for each short link.",
+      imgUrl:zeroloop,
+      url:"https://github.com/VittoLym/zeroloop",
+      type:"FRONTEND",
+      tec:[]
+    },
+  ] 
 
   return (
     <section className="project" id="projects">
@@ -104,9 +115,9 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <Row>
-                        {projects.length > 0 ? (
-                          projects.map((project, index) => (
+                      <Row className="container-pro">
+                        {projectsFreelance.length > 0 ? (
+                          projectsFreelance.map((project, index) => (
                             <ProjectCard
                               key={index}
                               {...project}
