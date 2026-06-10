@@ -85,7 +85,7 @@ export const Projects = () => {
                 <h2>Projects</h2>
                 <p>A selection of personal, freelance, and professional projects focused on
   scalable systems, automation, AI integration, and modern web development.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                <Tab.Container id="projects-tabs" defaultActiveKey="third">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
                       <Nav.Link eventKey="first">Empresarial</Nav.Link>
