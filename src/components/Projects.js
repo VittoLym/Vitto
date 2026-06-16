@@ -8,6 +8,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import trainifyAPI from "../assets/img/trainify_api2.png"
 import CAEngine from "../assets/img/CAEngine2.png"
 import zeroloop from "../assets/img/zeroloop.jpeg"
+import zeroloopExtension from "../assets/img/zeroloop_portfolio_cover_v2.svg"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -72,6 +73,14 @@ export const Projects = () => {
       type:"FRONTEND",
       tec:[]
     },
+    {
+      title:"Job Hunter",
+      description:"Analyze LinkedIn jobs, estimate salary, measure profile match, and generate tailored applications with AI.",
+      imgUrl:zeroloopExtension,
+      url:"https://github.com/VittoLym/zeroloop-extension",
+      type:"FULL STACK",
+      tec:[]
+    }
   ] 
 
   return (
